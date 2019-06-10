@@ -29,7 +29,7 @@ class AddEvent extends React.Component {
     alert(`Your Event is Posted! \n 
            Event Name: ${eventname} \n 
            Event Date: ${eventdate} \n
-           Event Fee: ${eventfee}`)
+           Event Fee: $${eventfee}`)
   }
   
   _next = () => {
@@ -144,7 +144,7 @@ function Step2(props) {
         className="event-input"
         id="eventdate"
         name="eventdate"
-        type="text"
+        type="date"
         placeholder=""
         value={props.eventdate}
         onChange={props.handleChange}
@@ -171,7 +171,7 @@ function Step3(props) {
         onChange={props.handleChange}
         />      
     </div>
-    <button className="btn submit-btn">Sign up</button>
+    <button className="btn submit-btn">Post Event</button>
     </React.Fragment>
   );
 }
